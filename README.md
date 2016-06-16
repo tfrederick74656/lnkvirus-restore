@@ -9,8 +9,9 @@ The coding is terrible, due to the fact that I frantically threw it together in 
 
 ### USAGE
 * Download and install the ActiveState© Perl package for your architecture from [here](http://www.activestate.com/activeperl/downloads).
-* Copy the lnkvirus-restore.pl script to the root of the directory that needs fixed
+* Copy the lnkvirus-restore.pl script to the parent of the directory that needs fixed.
 * Open command prompt, change to the same directory, and invoke `lnkvirus-restore.pl X:\Directory\` (include the trailing backslash)
+* (i.e. if you have a network share at `D:\Share` and a bunch of sub-folders like `D:\Share\{8cc3cecc-6e9a-44e7-9b67-83b497eb1383}`, copy the script to `D:\Share` and invoke `lnk-restore.pl D:\Share\`)
 * Watch the magic happen. If the tool hangs, it's because something is open in the folder (common on shared network folders)
 * Unhide the folders manually and delete the shortcuts (I didn't bother to implement either of these functions)
 
